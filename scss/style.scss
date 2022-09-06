@@ -211,12 +211,14 @@ nav {
   // .nav__news
 
   &__news {
+    color: var(--accent);
   }
 
   &__news::before {
     content: " ";
     background: url(/ikonate/nav/2.svg) 0px 1px no-repeat;
     padding: 3px 30px 0px 0px;
+    color: var(--accent);
   }
 
   // .nav__messenger
@@ -353,27 +355,48 @@ main {
       height: 55px;
       padding: 0px 20px;
       justify-content: space-between;
+
       &_icon {
+      }
+      &_icon img {
+        display: block;
+        margin-top: 2px;
         width: 50px;
+        height: 50px;
+        border: 1px solid rgb(253, 253, 253);
+        border-radius: 50%;
       }
       &_input {
-        width: 330px;
+        margin-left: 12px;
+        width: 325px;
       }
       &_photo {
+        padding-top: 15px;
         width: 50px;
         background-color: #fff;
       }
       &_video_recording {
+        padding-top: 15px;
+
         width: 50px;
         background-color: #fff;
       }
       &_audio_recording {
+        padding-top: 15px;
         width: 50px;
         background-color: #fff;
       }
       &_article {
+        padding-top: 15px;
         width: 50px;
         background-color: #fff;
+      }
+      &_l {
+        padding-top: 15px;
+      }
+      &_bl {
+        margin-left: 10px;
+        padding-top: 15px;
       }
     }
     &_stories {
@@ -430,15 +453,23 @@ aside {
       background-color: #fff;
       &_text {
         padding-top: 5px;
-        padding-right: 37px;
+        padding-right: 34px;
       }
       &_settings {
         width: 18px;
         margin-right: 2px;
+        background-color: #fff;
       }
       &_recommentations {
         width: 18px;
         margin-left: 1px;
+        background-color: #fff;
+      }
+      &_recommentations img {
+        width: 18px;
+        margin-left: 1px;
+        margin-right: 2px;
+        background-color: #fff;
       }
     }
     &_navigation {
